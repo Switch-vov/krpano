@@ -1,0 +1,19 @@
+/*Empty CSS file for your own CSS*/
+#ctlBtn, #makePanoBtn, #visitPanoBtn {
+    height: 40px;
+    position: relative;
+    left: 90px;
+    top: -45px;
+}
+
+#thelist {
+    display: inline-block;
+    background: silver;
+    height: auto;
+    min-height: 500px;
+}
+
+#thelist .file-item {
+    display: inline-block;
+    margin: 5px;
+}
