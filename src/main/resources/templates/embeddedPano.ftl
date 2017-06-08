@@ -15,19 +15,9 @@
     <link href="${base}/css/webuploader.css" rel="stylesheet">
     <link href="${base}/css/style.css" rel="stylesheet">
 
-    <mce:style>
-        <!--
-            body { margin: 0px;  }
-            iframe {border: 0px;}  -->
-    </mce:style>
-    <style mce_bogus="1">
-        body { margin: 0px; }
-        iframe {border: 0px;}
-    </style>
 </head>
-<body scroll="no">
-<iframe src="${panoSrc}" id="frame3d" name="frame3d" width="100%" height="100%" marginheight="0px" marginwidth="0px" scrolling="no" frameborder="0" onload="this.style.height=document.body.clientHeight"
-        mce_src="${panoSrc}">
+<body>
+<iframe id="embeddedPano" src="${panoSrc}" marginheight="0px" marginwidth="0px" scrolling="no" frameborder="0">
 
 </iframe>
 <div class="container-fluid">
@@ -37,12 +27,8 @@
 <script src="${base}/js/jquery.min.js"></script>
 <script src="${base}/js/bootstrap.min.js"></script>
 <script src="${base}/js/scripts.js"></script>
-<mce:script type="text/javascript"><!--
-        function resize(){
-            document.getElementById('frame3d').style.height = document.body.clientHeight +"px";
-        }
-        window.onresize = resize;
+<script>
 
-// --></mce:script>
+</script>
 </body>
 </html>
