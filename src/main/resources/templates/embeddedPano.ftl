@@ -17,7 +17,7 @@
 
 </head>
 <body>
-<iframe src="${panoSrc}" width="100%" height="100%" marginheight="0px" marginwidth="0px" scrolling="no" frameborder="0">
+<iframe src="${panoSrc}" width="100%" height="900" marginheight="0px" marginwidth="0px" scrolling="no" frameborder="0">
 
 </iframe>
 <div class="container-fluid">

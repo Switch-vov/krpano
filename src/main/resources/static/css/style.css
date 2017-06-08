@@ -1,5 +1,5 @@
 /*Empty CSS file for your own CSS*/
-#ctlBtn, #makePanoBtn, #visitPanoBtn {
+#ctlBtn, #makePanoBtn, #visitPanoBtn, #visitPanoEmbeddedBtn {
     height: 40px;
     position: relative;
     left: 90px;
