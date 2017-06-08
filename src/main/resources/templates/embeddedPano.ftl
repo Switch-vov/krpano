@@ -11,9 +11,9 @@
     <meta name="description" content="Source code generated using layoutit.com">
     <meta name="author" content="LayoutIt!">
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/webuploader.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="${base}/css/bootstrap.min.css" rel="stylesheet">
+    <link href="${base}/css/webuploader.css" rel="stylesheet">
+    <link href="${base}/css/style.css" rel="stylesheet">
 
 </head>
 <body>
@@ -24,9 +24,9 @@
 
 </div>
 
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/scripts.js"></script>
+<script src="${base}/js/jquery.min.js"></script>
+<script src="${base}/js/bootstrap.min.js"></script>
+<script src="${base}/js/scripts.js"></script>
 <script>
 
 </script>

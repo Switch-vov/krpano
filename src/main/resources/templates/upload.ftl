@@ -11,9 +11,9 @@
     <meta name="description" content="Source code generated using layoutit.com">
     <meta name="author" content="LayoutIt!">
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/webuploader.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="${base}/css/bootstrap.min.css" rel="stylesheet">
+    <link href="${base}/css/webuploader.css" rel="stylesheet">
+    <link href="${base}/css/style.css" rel="stylesheet">
 
 </head>
 <body>
@@ -81,10 +81,10 @@
     </div>
 </div>
 
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/webuploader.nolog.min.js"></script>
-<script src="js/scripts.js"></script>
+<script src="${base}/js/jquery.min.js"></script>
+<script src="${base}/js/bootstrap.min.js"></script>
+<script src="${base}/js/webuploader.nolog.min.js"></script>
+<script src="${base}/js/scripts.js"></script>
 <script type="text/javascript">
     var uid = Math.ceil(Math.random() * 10000);
     var cate = Math.ceil(Math.random() * 10000);
@@ -100,7 +100,7 @@
             // 选完文件后，是否自动上传。
             auto: false,
             // swf文件路径
-            swf: 'js/Uploader.swf',
+            swf: '${base}/js/Uploader.swf',
 
             // 文件接收服务端。
             server: '${base}/upload',
