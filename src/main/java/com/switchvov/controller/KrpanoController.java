@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -43,5 +44,13 @@ public class KrpanoController {
     @RequestMapping("visitPano")
     public String visitPano(String uid, String cate) {
         return "redirect:http://192.168.1.222:6166/" + uid + "/" + cate + "/vtour/tour.html";
+    }
+
+    @RequestMapping("visitPanoEmbedded")
+    public String visitPanoEmbedded(String uid, String cate, Model model) {
+        String panoSrc = "http://192.168.1.222:6166/krpano.html?xml="+uid+"/"+ cate+"/vtour/tour.xml";
+        model.addAttribute("panoSrc", panoSrc);
+
+        return "embeddedPano";
     }
 }

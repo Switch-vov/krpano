@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Bootstrap 3, from LayoutIt!</title>
+    <title>全景图上传</title>
 
     <meta name="description" content="Source code generated using layoutit.com">
     <meta name="author" content="LayoutIt!">
@@ -41,6 +41,7 @@
                                     class="btn btn-default" data-toggle="modal">创建全景图
                             </button>
                             <button id="visitPanoBtn" class="btn btn-default">访问全景图</button>
+                            <button id="visitPanoEmbeddedBtn" class="btn btn-default">访问全景图-嵌入式</button>
                             <div class="modal fade" id="modal-container-make-pano-conform" role="dialog"
                                  aria-labelledby="myModalLabel" aria-hidden="true">
                                 <div class="modal-dialog">
@@ -216,6 +217,9 @@
 
         $('#visitPanoBtn').click(function () {
             window.location.href = '${base}/krpano/visitPano?uid=' + uid + "&cate=" + cate;
+        });
+        $('#visitPanoEmbeddedBtn').click(function () {
+            window.location.href = '${base}/krpano/visitPanoEmbedded?uid=' + uid + "&cate=" + cate;
         });
     });
 </script>
